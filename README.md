@@ -12,3 +12,34 @@ The Case study later improved to:
 •	Facilities to add future events or workshops happening around the location
 •	Two facture authorization 
 •	Single page web service 
+
+
+An MVC Java Springboot Library Management App
+
+App highlight features / functionallity
+A admin can register an account for Parent and Child
+Register the Book of their choice
+Check book availability
+Built With
+Java 11
+Spring Framework 5
+Springboot 2.1.7
+Maven 3.3
+MySQL 8.0.15
+Thymeleaf 3.0.11
+Lombok 1.18.10
+Spring Data JPA
+Hibernate
+BootStrap
+
+Tested with 
+JUnit
+
+Contribution
+To contribute please follow these steps:
+
+Fork the repo
+Create a new branch (git checkout -b improve-branch)
+Add and commit your changes (git commit -am 'your message')
+Push your branch (git push origin improve-branch)
+Create a Pull Request
