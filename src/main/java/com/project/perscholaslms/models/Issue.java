@@ -16,7 +16,7 @@ public class Issue implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "issue_id")
     private Long id;
 
     @NotNull

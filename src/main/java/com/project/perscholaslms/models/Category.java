@@ -42,7 +42,6 @@ public class Category implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @MapsId("id")
     private List<Book> books;
 
     /****

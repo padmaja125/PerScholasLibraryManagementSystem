@@ -17,7 +17,7 @@ public class IssuedBook implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
+    @Column(name = "issued_id")
     private Long id;
 
     @JsonIgnore
@@ -28,7 +28,6 @@ public class IssuedBook implements Serializable {
 
     @JsonIgnore
     @ManyToOne
-    @MapsId("id")
     @JoinColumn(name = "issue_id")
     @NotNull
     private Issue issue;

@@ -14,8 +14,7 @@ public class Member implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    @JoinColumn(name = "id")
+    @Column(name = "member_id")
     private Long id;
 
     @NotEmpty(message = "*Please select member type")
