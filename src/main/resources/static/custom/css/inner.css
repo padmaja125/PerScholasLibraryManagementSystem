@@ -1,0 +1,185 @@
+:root {
+    --primary-color: #068891;
+    --secondary-color: #88BFB5;
+    --complimentary-color: #88BFB5;
+    --contrast-color: #F2E527;
+    --light-color: #f4f2f460;
+    --text-color: #001112;
+}
+
+nav a {
+    font-size: 1.14em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-bottom: 2px solid transparent;
+    display: block;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+nav {
+    left: 0;
+    z-index: 50;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 99vh;
+    background: var(--secondary-color);
+}
+
+section {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-in .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+/* Styles applied on trigger */
+section:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+section:target h1 {
+    opacity: 0;
+    animation: 2s fadeIn forwards .5s;
+}
+
+
+.header {
+    background: var(--primary-color);
+}
+
+.header h1 {
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    margin: 20px;
+    padding: 10px;
+    background: var(--light-color);
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.component {
+    margin: 0 auto;
+    padding: 10px 15px;
+    max-width: 1000px;
+    color: var(--text-color);
+}
+
+.two-column-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+.form-action {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-group:first-of-type {
+    width: 100%;
+}
+
+label {
+    font-size: 90%;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+input,
+select,
+textarea {
+    background-color: white;
+    border: none;
+    border-bottom: 1px solid teal;
+    display: block;
+    font-size: 14px;
+    padding: 0.5em 0;
+    transition: all .1s ease-out;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+
+}
+
+textarea {
+    height: 7em;
+}
+
+textarea:disabled {
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.btn {
+    display: inline-block;
+    background: #1ba0a9;
+    border: 2px solid #1ba0a9;
+    padding: 0.5em 2em;
+    color: white;
+    margin-right: 0.5em;
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #068891;
+    border: 2px solid #1ba0a9;
+    /*  background: linear-gradient(0deg, rgba(5,107,114,1) 95%, rgba(0,212,255,0.75) 99%, rgba(5,107,114,1) 100%); */
+}
+
+.btn:active {
+    background: #1ba0a9;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn:focus {
+    outline: none;
+}
